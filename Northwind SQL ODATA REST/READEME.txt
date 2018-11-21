@@ -1,0 +1,13 @@
+To run this REST service:
+
+Compile either the C# or F# source code with the _Compile A4CS.bat or _Compile A4FS.bat files respectively.
+Start IISExpress with either _Service_IISExpress_x64_8181.bat or _Service_IISExpress_x86_8181.bat depending on the system.
+Open _localhost-8181-A4CS.svc or _localhost-8181-A4FS.svc to open the services in the browser.
+
+Test GET queries for C# version:
+http://localhost:8181/A4CS.svc/?$format=json
+http://localhost:8181/A4CS.svc/Orders()?$format=json&$top=0&$inlinecount=allpages
+http://localhost:8181/A4CS.svc/Customers()?$format=json&$orderby=CustomerID&$top=3&$select=CustomerID,ContactName,CompanyName
+http://localhost:8181/A4CS.svc/Orders()?$format=json&$orderby=OrderID%20desc&$top=3&$select=OrderID,CustomerID,ShipName,ShipCity,ShipCountry%20
+http://localhost:8181/A4CS.svc/Orders()?$format=json&$orderby=OrderID&$filter=OrderDate%20eq%20null&$expand=Customer&$select=OrderID,CustomerID,OrderDate,ShippedDate,Freight%20
+http://localhost:8181/A4CS.svc/Orders()?$format=json&$orderby=OrderID&$filter=ShippedDate%20eq%20null&$expand=Customer&$select=OrderID,CustomerID,OrderDate,ShippedDate,Freight
