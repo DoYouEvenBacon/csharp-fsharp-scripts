@@ -1,0 +1,1 @@
+{"odata.metadata":"http://localhost:8181/A4CS.svc/$metadata","value":[{"name":"Customers","url":"Customers"},{"name":"Orders","url":"Orders"}]}

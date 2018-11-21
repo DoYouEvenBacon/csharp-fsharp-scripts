@@ -1,0 +1,1 @@
+{"odata.metadata":"http://localhost:8181/A4CS.svc/$metadata#Orders&$select=OrderID,CustomerID,OrderDate,ShippedDate,Freight","value":[{"OrderID":10249,"CustomerID":"TOMSP","OrderDate":null,"ShippedDate":"1996-07-10T00:00:00","Freight":"11.6100"},{"OrderID":10250,"CustomerID":"HANAR","OrderDate":null,"ShippedDate":"1996-07-12T00:00:00","Freight":"65.8300"}]}
